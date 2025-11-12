@@ -19,6 +19,7 @@ namespace Seguridad
                     int getId() const;
                     std::string getNombre() const;
                     double getPrecio() const;
+                    
                     void setId(int id);
                     void setNombre(const std::string& nombre);
                     void setPrecio(double precio);

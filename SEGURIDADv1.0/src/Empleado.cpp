@@ -8,7 +8,7 @@ namespace Seguridad
 
         Empleado::~Empleado() {}
 
-        // Getter y setter específico.
+        // Getters.
         int Empleado::getId() const 
             {
                 return id;
@@ -24,14 +24,17 @@ namespace Seguridad
                 return puesto;
             }
         
+        // Setters.
         void Empleado::setId(const int id) 
             {
                 this->id = id;
             }
+
         void Empleado::setNombre(const std::string& nombre) 
             {
                 this->nombre = nombre;
             }
+            
         void Empleado::setPuesto(const std::string& puesto) 
             {
                 this->puesto = puesto;

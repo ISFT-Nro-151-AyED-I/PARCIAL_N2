@@ -20,6 +20,7 @@ namespace Seguridad
                     int getId() const;
                     std::string getNombre() const;
                     std::string getPuesto() const;
+                    
                     void setId(int id);
                     void setNombre(const std::string& nombre);
                     void setPuesto(const std::string& puesto);

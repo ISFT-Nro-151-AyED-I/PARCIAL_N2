@@ -8,7 +8,7 @@ namespace Seguridad
 
         Cliente::~Cliente() {}
 
-        // Getter y setter específico.
+        // Getters.
         int Cliente::getId() const 
             {
                 return id;
@@ -23,14 +23,18 @@ namespace Seguridad
             {
                 return email;
             }
+
+        // Setters.    
         void Cliente::setId(const int id) 
             {
                 this->id = id;
             }
+
         void Cliente::setNombre(const std::string& nombre) 
             {
                 this->nombre = nombre;
             }
+            
         void Cliente::setEmail(const std::string& email) 
             {
                 this->email = email;

@@ -38,7 +38,7 @@ namespace Seguridad
                 this->precio = precio;
             }
 
-        // Métodos de utilidad
+        // Métodos de utilidad.
         void Equipo::mostrarInfo() const 
             {
                 std::cout << "🦺 ID: " << id 
