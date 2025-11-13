@@ -1,0 +1,104 @@
+🦺 SEGURIDAD v1.0 - SISTEMA DE GESTIÓN DE PEDIDOS
+   ==============================================
+
+📋 DESCRIPCIÓN DEL PROGRAMA
+   -------------------------
+
+Este programa simula un sistema de gestión de pedidos para una empresa de equipos de seguridad. Permite registrar clientes, empleados, equipos de protección y pedidos, mostrando toda la información de manera organizada.
+
+🎯 ¿CÓMO FUNCIONA?
+   ---------------
+
+1. 🚀 INICIALIZACIÓN: El programa crea datos de prueba automáticamente.
+2. 🦺 EQUIPOS: Crea 5 productos de seguridad (cascos, chalecos, botas, etc.) con precios diferentes.
+3. 👨‍💼 EMPLEADOS: Registra 2 empleados del área comercial.
+4. 👥 CLIENTES: Registra 3 empresas clientes en el sistema.
+5. 📋 PEDIDOS: Cada cliente realiza un pedido con varios equipos de seguridad.
+6. 📊 VISUALIZACIÓN: Muestra todos los pedidos con detalles completos y resumen por empleado.
+7. 🧹 LIMPIEZA: Libera toda la memoria utilizada correctamente.
+
+🔗 RELACIONES ENTRE CLASES
+   -----------------------
+
+* Pedido → Cliente (Agregación Pura)
+* Pedido → Empleado (Agregación Pura)
+* Pedido → Equipo (Agregación Pura - múltiples equipos)
+
+Cada pedido puede contener varios equipos con sus cantidades.
+
+📁 ESTRUCTURA DE CARPETAS
+   ----------------------
+
+📁 SEGURIDADv1.0/
+├── 📁 include/                → Archivos de cabecera (.hpp).
+│   ├── 📄 Cliente.hpp
+│   ├── 📄 Empleado.hpp
+│   ├── 📄 Equipo.hpp
+│   └── 📄 Pedido.hpp
+├── 📁 src/                    → Archivos de implementación (.cpp).
+│   ├── 📄 Cliente.cpp
+│   ├── 📄 Empleado.cpp
+│   ├── 📄 Equipo.cpp
+│   ├── 📄 Pedido.cpp
+│   └── 📄 Main.cpp
+├── 📁 bin/                    → Ejecutable compilado.
+│   └── 🚀 Seguridad.exe
+|--- 📊 Seguridad.drawio	→ Diagrama UML del programa.
+└── 📄 Léeme.txt               → Documentación del programa.
+
+🔧 PROCEDIMIENTO DE COMPILACIÓN
+   ----------------------------
+
+Desde la carpeta raíz SEGURIDADv1.0/, ejecutar:
+
+1. Compilar todos los archivos .cpp:
+
+g++ -I include/ src/*.cpp -o bin/Seguridad.exe
+
+2. Ejecutar el programa:
+
+bin\Seguridad.exe
+
+🎨 CARACTERÍSTICAS PRINCIPALES
+   ---------------------------
+
+✅ Programación Orientada a Objetos pura.
+✅ Gestión automática de memoria con new/delete.
+✅ Arrays dinámicos para equipos en pedidos.
+✅ Agregaciones puras entre clases.
+✅ Interfaz visual con emojis para mejor experiencia de usuario.
+✅ Protección contra inclusiones múltiples con #pragma once.
+✅ Namespace "Seguridad" para organización del código.
+✅ Manejo de caracteres especiales en consola Windows.
+
+📝 NOTAS IMPORTANTES
+   -----------------
+
+* El programa usa datos de prueba hardcodeados en Main.cpp para demostración.
+* Capacidad máxima: 10 equipos por pedido.
+* Los precios se muestran en pesos ($).
+* Compatible con consola de Windows (configuración UTF8 automática).
+* Relaciones de agregación: Los pedidos utilizan objetos existentes sin poseerlos.
+
+🚀 FLUJO DEL PROGRAMA
+   ------------------
+
+1. Configuración inicial de consola para caracteres especiales.
+2. Creación de equipos de seguridad (5 productos).
+3. Registro de empleados (2 vendedores).
+4. Registro de clientes (3 empresas).
+5. Generación de pedidos (3 pedidos asignados).
+6. Visualización completa de todos los pedidos.
+7. Resumen por empleado mostrando ventas totales.
+8. Limpieza automática de memoria.
+
+💡 CÓMO UTILIZAR EL PROYECTO
+   -------------------------
+
+1. Compilar según las instrucciones anteriores.
+2. Ejecutar el archivo Seguridad.exe
+3. Observar el flujo automático de datos de prueba.
+4. Analizar la estructura de pedidos y relaciones.
+5. Modificar los datos en Main.cpp para crear nuevos escenarios.
+
+¡El programa está listo para ejecutar y demostrar el sistema de gestión de pedidos de equipos de seguridad!
